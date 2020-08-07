@@ -40,7 +40,7 @@ export class Utility {
             }
         }
     
-        str = Utility.titleCaseWord(str.substring(indexOfFirstLetter));
+        str = str.substring(indexOfFirstLetter);
         return str;
     }
 }
