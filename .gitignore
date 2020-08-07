@@ -1,0 +1,8 @@
+node_modules
+.vscode
+game.ts
+person.ts
+player.ts
+result.ts
+scoreboard.ts
+utility.ts

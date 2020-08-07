@@ -1,0 +1,22 @@
+{
+    "extends": "../tsconfig.base",
+    "compilerOptions": {
+        "removeComments": true,
+        //"outFile": "../js/app.js"
+        "module": "commonjs",
+        "moduleResolution": "node", 
+        //"traceResolution": true
+        /*"baseUrl": "./modules", // default dir to be used for non-relative imports
+        "paths": {
+            "my_lib": ["./customPath"]
+        },
+        "rootDirs": [
+            "modules",
+            "src",
+            "ts/modules"
+        ]*/
+    },
+    "files": [
+        "./app.ts"
+    ]
+}

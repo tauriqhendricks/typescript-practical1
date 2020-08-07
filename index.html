@@ -1,0 +1,88 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/united.bootstrap.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>TypeScript Exercise 1</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <span class="navbar-brand">TypeScript Exercise 1</span>
+            </div>
+        </div>
+    </nav>
+    <div class="container"><h2>Registration form:</h2></div>
+    
+    <div class="form-horizontal" id="registrationform">
+        <div class="form-group">
+            <label for="forenames" class="col-sm-2 control-label">Forenames</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="forenames" size="20" placeholder="Forenames" />
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="surname" class="col-sm-2 control-label">Surname</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="surname" size="20" placeholder="Surname" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="nickname" class="col-sm-2 control-label">Nickname</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="nickname" size="20" placeholder="Nickname" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="emailAddress" class="col-sm-2 control-label">Email Address</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="emailAddress" size="20" placeholder="Email Address" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="password" size="20" placeholder="Password" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword " class="col-sm-2 control-label">Confirm Password </label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="confirmPassword" size="20" placeholder="Confirm Password" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Agree to the Terms and Conditions </label>
+            <div class="col-sm-2">
+                <input style="width: 20px; height: 20px; margin-top: 20px;" type="checkbox" id="agreeTerms" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-success" id="registerUser" disabled>Register</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-horizontal" id="game"></div>
+    
+    <div class="col-sm-offset-2 col-sm-10" id="scores">
+        <h2>Scoreboard</h2>
+        <h4 id="postedScores">No scores yet</h4>
+    </div>
+
+    <div class="col-sm-offset-2 col-sm-10" id="messages"></div>
+    
+    <script src="bundle.js"></script> 
+    
+</body>
+</html>
