@@ -16,8 +16,13 @@ document.getElementById('agreeTerms')!.addEventListener('click', () => {
 });
 
 // addind a click event listener to the register button
-document.getElementById('registerUser')?.addEventListener('click', () => {
+document.getElementById('registerUser')!.addEventListener('click', () => {
   registerUser();
+});
+
+// addind a click event listener to the runArrayMethods button
+document.getElementById('runArrayMethods')!.addEventListener('click', () => {
+  runArrayMethods();
 });
 
 function registerUser(): void {
@@ -103,10 +108,72 @@ function registerUser(): void {
   else {
     console.log('Validation complete');
   }
+}
 
-  /*for (let [key, value] of userMap) {
-    console.log(key);
-    console.log(value[0]);
-    console.log('\n');
-  }*/
+function runArrayMethods(): void {
+
+  let result: any;
+  /*1. Create a typescript numbers array with the following numbers, 89,5,56,102,7. Use
+  the filter method on the array to return all numbers greater than 50. Log the resulting array to the
+  console.*/
+  let array1: number[] = [89, 5, 56, 107, 7];
+  result = array1.filter(element => {
+    return element > 50
+  })
+  console.log(result);
+
+  /*2. Create a typescript string array with the following strings, "John", "Sarah", "Beth", "Adam",
+  "Peter". Use the splice method on the array to replace "Beth" and "Adam" with "Cindy" and "Zoe".
+  Log the resulting array to the console.*/
+  let array2: string[] = [ 'John', 'Sarah', 'Beth', 'Adam', 'Peter'];
+  result = array2.splice(2, 2, 'Cindy', 'Zoe');
+  console.log(array2);
+  
+  /*3. Create a typescript string array with the following strings, "John", "Sarah", "Beth", "Adam",
+  "Peter". Use the splice method on the array to remove "Adam" from the array. Log the resulting
+  array to the console.*/
+  let array3: string[] = ['John', 'Sarah', 'Beth', 'Adam', 'Peter'];
+  array3.splice(3, 1);
+  console.log(array3);
+
+  /*4. Create a typescript numbers array with the following numbers, 89,5,56,102,7. Use
+  the pop method to remove the last number from the array and log the resulting array to the
+  console.*/
+  let array4: number[] = [89, 5, 56, 102, 7];
+  array4.pop();
+  console.log(array4);
+  
+  /*5. Create a typescript numbers array with the following numbers, 89,5,56,102,7. Use
+  the push method to add 78 to the end of the array. Log the resulting array to the console.*/
+  let array5: number[] = [89, 5, 56, 102, 7];
+  array5.push(78);
+  console.log(array5);
+  
+  /*6. Create a typescript numbers array with the following numbers, 89,5,56,102,7. Use
+  the indexOf method to get the index of the number 5 in the array. Log the result to the console.*/
+  let array6: number[] = [89, 5, 56, 102, 7];
+  result = array6.indexOf(5);
+  console.log(result);
+  
+  /*7. Create a typescript numbers array with the following strings, "John", "Sarah", "Beth", "Adam",
+  "Peter". Use the slice method to create a new array with "Sarah", "Beth" and "Adam" in the array.
+  Log the new array to the console.*/
+  let array7: string[] = ['John', 'Sarah', 'Beth', 'Adam', 'Peter'];
+  result = array7.slice(1, 4);
+  console.log(result);
+  
+  /*8. Create a typescript numbers array with the following numbers, 89,5,56,102,7. Use
+  the unshift method to add 14 and 67 to the beginning of the array. Log the resulting array to the
+  console.*/
+  let array8: number[] = [89, 5, 56, 102, 7];
+  array8.unshift(14, 67);
+  console.log(array8);
+  
+  /*9. Create two TypeScript arrays, one number array, 1,2,3, and one string array, "a", "b", "c". Use the
+  concat method to combine the two arrays and log the resulting array to the console.*/
+  let array9: number[] = [1, 2, 3];
+  let array10: string[] = ['a', 'b', 'c'];
+  let array11: any[] = [];
+  result = array11.concat(array9,array10);
+  console.log(result);
 }
