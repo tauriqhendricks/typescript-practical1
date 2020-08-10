@@ -28,7 +28,7 @@ export class Utility {
         }
     }
 
-    // get the new string without the empty values
+    // get the new string without the empty values at the begining
     static getStringWithoutSpaces(str: string): string {
         let indexOfFirstLetter: number = 0;
 
@@ -42,5 +42,25 @@ export class Utility {
     
         str = str.substring(indexOfFirstLetter);
         return str;
+    }
+
+    // only checking if there is a @ smyblol in the string
+    static isEmailAddress(str: string): boolean {
+        if (str.search(`@`) == -1) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    static containWhiteSpaces(str: string): boolean {
+        if (/\s/.test(str)) {
+            // It has any kind of whitespace
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }

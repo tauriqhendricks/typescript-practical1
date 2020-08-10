@@ -4,7 +4,8 @@
         "removeComments": true,
         //"outFile": "../js/app.js"
         "module": "commonjs",
-        "moduleResolution": "node", 
+        "moduleResolution": "node",
+        "downlevelIteration": true
         //"traceResolution": true
         /*"baseUrl": "./modules", // default dir to be used for non-relative imports
         "paths": {
